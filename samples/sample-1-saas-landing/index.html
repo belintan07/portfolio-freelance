@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulseScale AI — High-Performance Inference Engine [SAMPLE CASE STUDY]</title>
+  <meta name="description" content="Sample case study demonstration of an ultra-fast, high-converting B2B SaaS landing page with interactive ROI calculator and live benchmark inspector.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              cyan: '#06b6d4',
+              emerald: '#10b981',
+              dark: '#08090d',
+              card: '#0f1119',
+              border: 'rgba(255, 255, 255, 0.08)',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #07080c;
+      color: #e2e8f0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .gradient-mesh {
+      background: radial-gradient(circle at 50% 0%, rgba(79, 70, 229, 0.18) 0%, transparent 60%),
+                  radial-gradient(circle at 80% 30%, rgba(6, 182, 212, 0.12) 0%, transparent 50%);
+    }
+    .glass-panel {
+      background: rgba(15, 17, 25, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-panel:hover {
+      border-color: rgba(99, 102, 241, 0.3);
+    }
+    input[type=range] {
+      accent-color: #6366f1;
+    }
+  </style>
+</head>
+<body class="selection:bg-indigo-500 selection:text-white antialiased overflow-x-hidden">
+
+  <!-- ================= NOTICE BANNER ================= -->
+  <div class="w-full bg-gradient-to-r from-indigo-900/90 via-indigo-950 to-slate-900 border-b border-indigo-500/30 text-indigo-200 text-xs py-2 px-4 text-center font-medium flex items-center justify-center gap-2">
+    <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+    <span><strong>SAMPLE CASE STUDY &amp; PROTOTYPE:</strong> Created by Belintan (Full-Stack &amp; AI Engineer) to illustrate CRO architecture and high-performance UX.</span>
+  </div>
+
+  <!-- ================= TOP NAVIGATION ================= -->
+  <header class="sticky top-0 z-50 w-full glass-panel border-b border-white/5 px-6 py-3.5">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-indigo-500 to-cyan-500 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-indigo-500/20">
+          ⚡
+        </div>
+        <div>
+          <span class="text-base font-extrabold tracking-tight text-white flex items-center gap-2">
+            PulseScale <span class="text-xs px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 font-mono">v2.4</span>
+          </span>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8 text-xs font-semibold tracking-wide text-slate-300">
+        <a href="#calculator" class="hover:text-white transition-colors">ROI Calculator</a>
+        <a href="#benchmarks" class="hover:text-white transition-colors">Live Benchmarks</a>
+        <a href="#architecture" class="hover:text-white transition-colors">Architecture</a>
+        <a href="#case-metrics" class="hover:text-white transition-colors">Case Study Proof</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <div class="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-[11px] font-mono text-emerald-400">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+          Cluster Latency: 28ms
+        </div>
+        <a href="#calculator" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition-all shadow-md shadow-indigo-600/30">
+          Estimate Savings
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="relative pt-20 pb-24 px-6 gradient-mesh overflow-hidden">
+    <div class="max-w-5xl mx-auto text-center">
+      
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-mono text-indigo-300 mb-6">
+        <span class="text-cyan-400">✦</span> Case Study: B2B Inference Acceleration Engine
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight sm:leading-none mb-6">
+        Cut LLM Latency by <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">64%</span>.<br>
+        Slash Cloud Spend in Half.
+      </h1>
+
+      <p class="max-w-2xl mx-auto text-slate-400 text-base sm:text-lg mb-10 leading-relaxed">
+        PulseScale dynamically balances, semantically caches, and compresses high-throughput model requests across multi-region edge nodes without code changes.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+        <a href="#calculator" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-500 hover:to-indigo-400 text-white font-bold text-sm shadow-xl shadow-indigo-600/25 transition-all">
+          Interactive ROI Calculator ↓
+        </a>
+        <a href="#benchmarks" class="w-full sm:w-auto px-7 py-3.5 rounded-xl glass-panel text-slate-300 hover:text-white font-semibold text-sm transition-all border border-white/10">
+          Inspect Console Benchmarks →
+        </a>
+      </div>
+
+      <!-- Quick KPI Counters -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+        <div class="glass-panel p-4 rounded-2xl text-center">
+          <div class="text-2xl sm:text-3xl font-black text-white font-mono">0.78s</div>
+          <div class="text-xs text-slate-400 mt-1">Landing LCP Speed</div>
+        </div>
+        <div class="glass-panel p-4 rounded-2xl text-center">
+          <div class="text-2xl sm:text-3xl font-black text-emerald-400 font-mono">+171%</div>
+          <div class="text-xs text-slate-400 mt-1">Demo Conversion Lift</div>
+        </div>
+        <div class="glass-panel p-4 rounded-2xl text-center">
+          <div class="text-2xl sm:text-3xl font-black text-indigo-400 font-mono">&lt;45ms</div>
+          <div class="text-xs text-slate-400 mt-1">Edge Cache Latency</div>
+        </div>
+        <div class="glass-panel p-4 rounded-2xl text-center">
+          <div class="text-2xl sm:text-3xl font-black text-cyan-400 font-mono">99.99%</div>
+          <div class="text-xs text-slate-400 mt-1">Uptime SLA Guaranteed</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= INTERACTIVE ROI CALCULATOR ================= -->
+  <section id="calculator" class="py-20 px-6 max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="text-indigo-400 font-mono text-xs uppercase tracking-widest">Interactive Proof of Value</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">
+        Calculate Your Projected Savings
+      </h2>
+      <p class="text-slate-400 text-sm max-w-xl mx-auto mt-2">
+        See the immediate impact of semantic caching, prompt compression, and edge routing on your monthly cloud infrastructure.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <!-- Controls -->
+      <div class="lg:col-span-7 glass-panel p-6 sm:p-8 rounded-3xl space-y-6">
+        <div>
+          <div class="flex justify-between items-center mb-2">
+            <label for="reqSlider" class="text-sm font-semibold text-slate-200">Monthly Model Inferences</label>
+            <span id="reqValue" class="text-sm font-mono font-bold text-indigo-400">5,000,000 calls</span>
+          </div>
+          <input id="reqSlider" type="range" min="500000" max="50000000" step="500000" value="5000000" class="w-full h-2 bg-slate-800 rounded-lg cursor-pointer">
+          <div class="flex justify-between text-[11px] text-slate-500 font-mono mt-1">
+            <span>500K</span>
+            <span>25M</span>
+            <span>50M+</span>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold text-slate-200 mb-2">Primary Model Family</label>
+          <div class="grid grid-cols-3 gap-3">
+            <button type="button" onclick="setModelMultiplier(1.0, this)" class="model-btn active px-3 py-2.5 rounded-xl border border-indigo-500 bg-indigo-500/20 text-white text-xs font-semibold text-center transition-all">
+              GPT-4o / Claude Sonnet
+            </button>
+            <button type="button" onclick="setModelMultiplier(1.8, this)" class="model-btn px-3 py-2.5 rounded-xl border border-white/10 bg-white/5 text-slate-300 hover:text-white text-xs font-semibold text-center transition-all">
+              Frontier (Claude Opus / o1)
+            </button>
+            <button type="button" onclick="setModelMultiplier(0.4, this)" class="model-btn px-3 py-2.5 rounded-xl border border-white/10 bg-white/5 text-slate-300 hover:text-white text-xs font-semibold text-center transition-all">
+              Fast (Llama 3 / Flash)
+            </button>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between items-center mb-2">
+            <label for="cacheSlider" class="text-sm font-semibold text-slate-200">Semantic Cache Hit Rate Estimate</label>
+            <span id="cacheValue" class="text-sm font-mono font-bold text-cyan-400">42%</span>
+          </div>
+          <input id="cacheSlider" type="range" min="15" max="80" step="1" value="42" class="w-full h-2 bg-slate-800 rounded-lg cursor-pointer">
+          <p class="text-xs text-slate-400 mt-2">
+            PulseScale caches semantically identical queries without triggering upstream provider tokens.
+          </p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="text-xl">🛡️</div>
+            <div>
+              <div class="text-xs font-bold text-white">Zero Cold Start &amp; Automatic Fallback</div>
+              <div class="text-[11px] text-slate-400">Guaranteed graceful failover across Anthropic, OpenAI, and Groq</div>
+            </div>
+          </div>
+          <span class="text-emerald-400 text-xs font-mono font-bold">Enabled</span>
+        </div>
+      </div>
+
+      <!-- Live Calculation Card -->
+      <div class="lg:col-span-5 glass-panel p-6 sm:p-8 rounded-3xl border-indigo-500/30 relative overflow-hidden">
+        <div class="absolute -top-24 -right-24 w-48 h-48 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="text-xs font-mono uppercase tracking-wider text-slate-400 mb-1">Projected Annual Impact</div>
+        <div id="costSavings" class="text-4xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 font-mono tracking-tight">
+          $38,400
+        </div>
+        <div class="text-xs text-slate-400 mt-1 mb-6">Estimated direct model token savings per year</div>
+
+        <div class="space-y-4 pt-4 border-t border-white/10">
+          <div class="flex justify-between items-center text-sm">
+            <span class="text-slate-400">Monthly Run-Rate Savings</span>
+            <span id="monthlySavings" class="font-mono font-bold text-white">$3,200 / mo</span>
+          </div>
+          <div class="flex justify-between items-center text-sm">
+            <span class="text-slate-400">Inference Latency Reduction</span>
+            <span id="latencyReduction" class="font-mono font-bold text-emerald-400">840ms → 290ms (-65%)</span>
+          </div>
+          <div class="flex justify-between items-center text-sm">
+            <span class="text-slate-400">Developer Hours Saved</span>
+            <span id="devHours" class="font-mono font-bold text-indigo-300">48 hrs / mo</span>
+          </div>
+          <div class="flex justify-between items-center text-sm">
+            <span class="text-slate-400">Implementation Time</span>
+            <span class="font-mono font-bold text-cyan-400">&lt; 15 minutes (Drop-in URL)</span>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <button onclick="triggerDemoToast()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-500 hover:from-indigo-500 hover:to-indigo-400 text-white font-bold text-sm shadow-lg shadow-indigo-600/30 transition-all flex items-center justify-center gap-2">
+            <span>Deploy Interactive Trial</span>
+            <span>→</span>
+          </button>
+          <div id="toastMessage" class="hidden text-center text-xs text-emerald-400 font-mono mt-3">
+            ✓ Interactive prototype triggered — ready for client evaluation.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LIVE BENCHMARK CONSOLE ================= -->
+  <section id="benchmarks" class="py-20 px-6 max-w-6xl mx-auto">
+    <div class="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-white/10 gap-4">
+        <div>
+          <span class="text-xs font-mono text-cyan-400">Interactive Execution Console</span>
+          <h3 class="text-2xl font-bold text-white mt-1">Live Request Inspector</h3>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="runBenchmarkTest('cached')" class="px-3.5 py-1.5 rounded-lg bg-indigo-600/40 hover:bg-indigo-600 border border-indigo-400/40 text-xs font-mono text-white transition-all">
+            Simulate Cached Call (Fast)
+          </button>
+          <button onclick="runBenchmarkTest('direct')" class="px-3.5 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-mono text-slate-300 transition-all">
+            Direct Provider Call
+          </button>
+        </div>
+      </div>
+
+      <!-- Terminal Output -->
+      <div class="mt-6 bg-[#050608] rounded-2xl p-4 sm:p-6 font-mono text-xs border border-white/5 overflow-x-auto">
+        <div class="flex items-center gap-2 mb-4 text-slate-500 text-[11px] pb-2 border-b border-white/5">
+          <span class="w-3 h-3 rounded-full bg-rose-500/80 inline-block"></span>
+          <span class="w-3 h-3 rounded-full bg-amber-500/80 inline-block"></span>
+          <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
+          <span class="ml-2 text-slate-400">curl -X POST https://api.pulsescale.dev/v1/chat/completions</span>
+        </div>
+        <pre id="consoleOutput" class="text-slate-300 leading-relaxed font-mono">
+{
+  <span class="text-indigo-400">"status"</span>: <span class="text-emerald-400">200</span>,
+  <span class="text-indigo-400">"route"</span>: <span class="text-cyan-300">"edge-region-us-east-1"</span>,
+  <span class="text-indigo-400">"cache_status"</span>: <span class="text-emerald-400">"SEMANTIC_CACHE_HIT"</span>,
+  <span class="text-indigo-400">"execution_time_ms"</span>: <span class="text-emerald-400">28.4</span>,
+  <span class="text-indigo-400">"tokens_billed"</span>: <span class="text-slate-400">0</span>,
+  <span class="text-indigo-400">"upstream_provider"</span>: <span class="text-slate-400">"bypassed (100% token cost avoided)"</span>,
+  <span class="text-indigo-400">"model"</span>: <span class="text-amber-300">"claude-3-5-sonnet-20241022"</span>
+}
+        </pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CASE STUDY BREAKDOWN CARD ================= -->
+  <section id="case-metrics" class="py-16 px-6 max-w-6xl mx-auto">
+    <div class="p-8 rounded-3xl bg-gradient-to-b from-white/[0.04] to-transparent border border-white/10">
+      <div class="max-w-3xl">
+        <span class="px-2.5 py-1 rounded-md bg-indigo-500/20 text-indigo-300 font-mono text-xs uppercase">Sample Proof Summary</span>
+        <h3 class="text-3xl font-extrabold text-white mt-3 mb-4">Why This Sample Converts Clients</h3>
+        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+          Decision-makers do not buy tech stacks; they buy <strong>reduced latency, lower bills, and undeniable user experience</strong>. By combining interactive estimation tools, verified Lighthouse optimization, and direct API telemetry, this prototype demonstrates how modern frontend engineering drives revenue.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-white/10">
+          <div>
+            <div class="text-xs text-slate-400">1. Problem Identified</div>
+            <div class="text-sm font-semibold text-white mt-1">Dull SaaS specs with 68% visitor bounce.</div>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400">2. Solution Engineered</div>
+            <div class="text-sm font-semibold text-indigo-300 mt-1">Zero-bloat interactive savings calculator &amp; console.</div>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400">3. Target Result Achieved</div>
+            <div class="text-sm font-semibold text-emerald-400 mt-1">+171% demo conversion, 0.78s LCP load time.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="py-12 border-t border-white/5 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        © 2026 Belintan — Portfolio Sample Case Study 1 of 3
+      </div>
+      <div class="flex items-center gap-6 font-mono text-[11px] text-slate-400">
+        <span>Standard: Clean Semantic HTML5</span>
+        <span>•</span>
+        <span>Zero-Framework JS Engine</span>
+        <span>•</span>
+        <span>CRO Engineered</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript Engine -->
+  <script>
+    let modelMultiplier = 1.0;
+
+    function setModelMultiplier(mult, el) {
+      modelMultiplier = mult;
+      document.querySelectorAll('.model-btn').forEach(btn => {
+        btn.classList.remove('active', 'border-indigo-500', 'bg-indigo-500/20', 'text-white');
+        btn.classList.add('border-white/10', 'bg-white/5', 'text-slate-300');
+      });
+      el.classList.add('active', 'border-indigo-500', 'bg-indigo-500/20', 'text-white');
+      el.classList.remove('border-white/10', 'bg-white/5', 'text-slate-300');
+      calculateSavings();
+    }
+
+    function calculateSavings() {
+      const requests = parseInt(document.getElementById('reqSlider').value);
+      const cacheRate = parseInt(document.getElementById('cacheSlider').value);
+
+      document.getElementById('reqValue').innerText = (requests / 1000000).toFixed(1) + 'M calls';
+      document.getElementById('cacheValue').innerText = cacheRate + '%';
+
+      // Cost per million tokens baseline: ~$6 * model multiplier
+      const baseCost = (requests / 1000000) * 15 * modelMultiplier; 
+      const monthlySavingsAmount = Math.round(baseCost * (cacheRate / 100) * 0.85);
+      const annualSavingsAmount = monthlySavingsAmount * 12;
+
+      document.getElementById('monthlySavings').innerText = '$' + monthlySavingsAmount.toLocaleString() + ' / mo';
+      document.getElementById('costSavings').innerText = '$' + annualSavingsAmount.toLocaleString();
+      
+      const devHours = Math.round((requests / 1000000) * 8.5);
+      document.getElementById('devHours').innerText = devHours + ' hrs / mo';
+
+      const directLatency = Math.round(750 * modelMultiplier);
+      const cachedLatency = Math.round(28 + (100 - cacheRate) * 1.5);
+      const pctDrop = Math.round(((directLatency - cachedLatency) / directLatency) * 100);
+      document.getElementById('latencyReduction').innerText = `${directLatency}ms → ${cachedLatency}ms (-${pctDrop}%)`;
+    }
+
+    function runBenchmarkTest(type) {
+      const out = document.getElementById('consoleOutput');
+      if (type === 'cached') {
+        out.innerHTML = `{
+  <span class="text-indigo-400">"status"</span>: <span class="text-emerald-400">200 OK</span>,
+  <span class="text-indigo-400">"route"</span>: <span class="text-cyan-300">"edge-region-us-east-1"</span>,
+  <span class="text-indigo-400">"cache_status"</span>: <span class="text-emerald-400">"SEMANTIC_CACHE_HIT"</span>,
+  <span class="text-indigo-400">"execution_time_ms"</span>: <span class="text-emerald-400">27.6</span>,
+  <span class="text-indigo-400">"tokens_billed"</span>: <span class="text-slate-400">0</span>,
+  <span class="text-indigo-400">"cost_avoided"</span>: <span class="text-emerald-400">"$0.048"</span>,
+  <span class="text-indigo-400">"provider_upstream"</span>: <span class="text-slate-400">"none (served from vector memory)"</span>
+}`;
+      } else {
+        out.innerHTML = `{
+  <span class="text-indigo-400">"status"</span>: <span class="text-emerald-400">200 OK</span>,
+  <span class="text-indigo-400">"route"</span>: <span class="text-amber-300">"direct-upstream-anthropic"</span>,
+  <span class="text-indigo-400">"cache_status"</span>: <span class="text-amber-400">"CACHE_MISS_UPSTREAM_INVOKED"</span>,
+  <span class="text-indigo-400">"execution_time_ms"</span>: <span class="text-amber-300">782.1</span>,
+  <span class="text-indigo-400">"tokens_billed"</span>: <span class="text-slate-300">1420</span>,
+  <span class="text-indigo-400">"cost_incurred"</span>: <span class="text-slate-300">"$0.0213"</span>,
+  <span class="text-indigo-400">"provider_upstream"</span>: <span class="text-slate-300">"api.anthropic.com"</span>
+}`;
+      }
+    }
+
+    function triggerDemoToast() {
+      const toast = document.getElementById('toastMessage');
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 3500);
+    }
+
+    document.getElementById('reqSlider').addEventListener('input', calculateSavings);
+    document.getElementById('cacheSlider').addEventListener('input', calculateSavings);
+
+    // Initial calculation on load
+    calculateSavings();
+  </script>
+</body>
+</html>

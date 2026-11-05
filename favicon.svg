@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141522"/>
+      <stop offset="100%" stop-color="#07070a"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff913d"/>
+      <stop offset="50%" stop-color="#ff7a1a"/>
+      <stop offset="100%" stop-color="#e05300"/>
+    </linearGradient>
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Outer Rounded Squircle -->
+  <rect x="4" y="4" width="120" height="120" rx="32" fill="url(#bgGrad)" stroke="#ff7a1a" stroke-width="3" stroke-opacity="0.4"/>
+  
+  <!-- Subtle Grid Accent -->
+  <circle cx="28" cy="28" r="3" fill="#ff7a1a" fill-opacity="0.6"/>
+  <circle cx="100" cy="100" r="3" fill="#38bdf8" fill-opacity="0.6"/>
+
+  <!-- High-Tech Geometric "B" with Code Brackets -->
+  <g filter="url(#glow)">
+    <!-- Main Spine -->
+    <rect x="34" y="28" width="12" height="72" rx="6" fill="url(#brandGrad)" />
+    
+    <!-- Top Loop -->
+    <path d="M42 28 H66 C80 28 88 36 88 48 C88 60 80 66 66 66 H42 Z" fill="none" stroke="url(#brandGrad)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Bottom Loop -->
+    <path d="M42 62 H72 C88 62 96 72 96 84 C96 98 86 100 70 100 H42 Z" fill="none" stroke="url(#brandGrad)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Terminal Dot Accent -->
+    <circle cx="68" cy="84" r="5" fill="url(#accentCyan)"/>
+  </g>
+</svg>

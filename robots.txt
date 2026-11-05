@@ -1,0 +1,8 @@
+# robots.txt for https://belintan.dev
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Host & Sitemaps
+Host: https://belintan.dev
+Sitemap: https://belintan.dev/sitemap.xml

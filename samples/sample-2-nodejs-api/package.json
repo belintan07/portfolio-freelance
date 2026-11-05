@@ -1,0 +1,20 @@
+{
+  "name": "sample-nodejs-idempotent-api",
+  "version": "1.0.0",
+  "description": "Sample Case Study: Resilient Node.js Idempotent Payment Webhook & Transaction Engine",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node server.js"
+  },
+  "author": "Belintan <https://belintan.dev>",
+  "license": "MIT",
+  "keywords": [
+    "nodejs",
+    "webhooks",
+    "idempotency",
+    "payments",
+    "stripe",
+    "api"
+  ]
+}

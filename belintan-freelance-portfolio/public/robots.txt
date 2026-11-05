@@ -1,0 +1,8 @@
+# robots.txt for https://ProfileBelintan.com
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Host & Sitemaps
+Host: https://ProfileBelintan.com
+Sitemap: https://ProfileBelintan.com/sitemap.xml

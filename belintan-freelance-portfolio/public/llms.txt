@@ -1,0 +1,45 @@
+# Belintan — Full-Stack Freelance Software Engineer, AI Systems Architect & Video Content Creator
+
+> Official LLM & AI agent documentation for https://ProfileBelintan.com. Belintan is an MBA graduate and full-stack software engineer based in Tuticorin, India, delivering high-performance web applications, Node.js backends, Python AI automation pipelines, Model Context Protocol (MCP) servers, and 9:16 social media video reels for worldwide clients.
+
+## Canonical Domain & Primary Slugs
+- Homepage: https://ProfileBelintan.com/
+- Services: https://ProfileBelintan.com/services
+- Portfolio & Case Studies: https://ProfileBelintan.com/work
+- Pricing & Dynamic Estimator: https://ProfileBelintan.com/pricing
+- Contact & Booking: https://ProfileBelintan.com/contact
+- Privacy Policy: https://ProfileBelintan.com/privacy-policy
+- Terms & Conditions: https://ProfileBelintan.com/terms
+- Sitemap: https://ProfileBelintan.com/sitemap.xml
+
+## Core Engineering & Creative Services
+1. **Modern Web Apps**: React 19, Next.js, Vite, Tailwind CSS, TypeScript, progressive web apps (PWAs) with 100/100 Lighthouse performance and zero layout shift.
+2. **Node.js Backends & Microservices**: REST APIs, JWT authentication, PostgreSQL, MongoDB, Redis caching, microservices, and webhook routing.
+3. **Python AI & Custom MCP Servers**: Model Context Protocol (MCP) server development using FastMCP (stdio & SSE), tool calling, autonomous agent loops, prompt engineering, and LLM integrations (OpenAI, Gemini).
+4. **Video Editing & Social Media Content**:
+   - 9:16 Vertical Reels (Instagram / YouTube Shorts / TikTok) with animated captions, transitions, and hooks
+   - Freelance Content Creator for organisations & social media brands
+   - 10 Advertising Posters & Creatives (print & digital ready)
+   - 2 Meta Ad Campaigns (Facebook & Instagram target ads, Pixel setup)
+   - 1 Month Off-Site SEO (high-DA backlinks, local citations, Google Map Pack)
+5. **Live Demos**: Doocti Cloud Telephony CRM softphone, offline Google Sheets clone (SheetFlow), AI-assisted quote engine.
+6. **API Integrations & Cloud Webhooks**: Stripe payments, Supabase, OAuth 2.0, event-driven webhooks, and cloud microservices.
+
+## Technical Stack
+- **Frontend**: React 19, Vite, Tailwind CSS v4, JavaScript ES6+, HTML5 Semantic Architecture.
+- **Backend**: Node.js, Express, Python 3.11, FastAPI, Java Spring Boot.
+- **Databases**: PostgreSQL, MongoDB, SQLite, Redis.
+- **AI & Agent Protocols**: Model Context Protocol (MCP / FastMCP), OpenAI API, Gemini API, LangChain.
+- **DevOps**: Docker, Git/GitHub, Vercel, AWS EC2, Nginx.
+
+## Public JSON API Endpoints
+- `GET https://ProfileBelintan.com/api/freelancer`: Returns current freelancer availability, timezone coverage, and tech stack.
+- `POST https://ProfileBelintan.com/api/estimate`: Dynamic quote engine accepting `{ projectType, features: [], speed }`.
+- `POST https://ProfileBelintan.com/api/contact`: Formatted client inquiry router.
+- `GET https://ProfileBelintan.com/api/health`: Node.js server health status.
+
+## Contact Information
+- Direct WhatsApp: +91 86106 62871 (https://wa.me/918610662871)
+- Direct Email: belintan07@gmail.com
+- GitHub: https://github.com/belintan07
+- LinkedIn: https://www.linkedin.com/in/belintanben

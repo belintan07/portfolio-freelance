@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offline | Belintan — Full-Stack Freelance Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #07070a;
+      color: #eae7e1;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-5 selection:bg-[#ff7a1a] selection:text-black">
+  <div class="max-w-md w-full bg-[#0d0e14] border border-white/10 rounded-3xl p-8 text-center shadow-2xl relative overflow-hidden">
+    
+    <!-- Ambient glow -->
+    <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-48 h-48 bg-[#ff7a1a]/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="w-16 h-16 rounded-2xl bg-[#ff7a1a]/10 border border-[#ff7a1a]/25 text-3xl flex items-center justify-center mx-auto mb-6">
+      📡
+    </div>
+
+    <span class="text-xs font-mono text-[#ff913d] uppercase tracking-widest px-3 py-1 rounded-full bg-white/5 border border-white/10">
+      OFFLINE MODE ACTIVE
+    </span>
+
+    <h1 class="text-2xl font-extrabold text-white mt-4 mb-2">
+      You are currently offline
+    </h1>
+
+    <p class="text-sm text-[#9d978a] leading-relaxed mb-6">
+      Check your internet connection to access the live portfolio, interactive project estimator, and dynamic backend terminal.
+    </p>
+
+    <!-- Cached Contact Options -->
+    <div class="p-4 rounded-2xl bg-white/5 border border-white/5 text-left mb-6 space-y-2 text-xs font-mono text-[#dcd7ce]">
+      <p class="text-white font-bold text-sm font-sans mb-1">Direct Contact with Belintan:</p>
+      <p>📞 Phone: <a href="tel:+918610662871" class="text-[#ff913d] hover:underline">+91 86106 62871</a></p>
+      <p>💬 WhatsApp: <a href="https://wa.me/918610662871" class="text-[#10b981] hover:underline">+91 86106 62871</a></p>
+      <p>✉️ Email: <a href="mailto:belintan07@gmail.com" class="text-[#38bdf8] hover:underline">belintan07@gmail.com</a></p>
+    </div>
+
+    <button 
+      onclick="window.location.reload()" 
+      class="w-full py-3 rounded-full bg-[#ff7a1a] hover:bg-[#ffa043] text-black font-bold text-sm transition-all shadow-lg shadow-[#ff7a1a]/20"
+    >
+      Retry Connection
+    </button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+# Belintan - Full-Stack Freelance Software Engineer & AI Systems Architect
+
+> Official LLM & AI agent documentation for https://belintan.dev. Belintan is an MBA graduate and full-stack software engineer based in Tuticorin, India, delivering high-performance web applications, Node.js backends, Python AI automation pipelines, and Model Context Protocol (MCP) servers for worldwide clients.
+
+## Canonical Domain & Primary Slugs
+- Homepage: https://belintan.dev/
+- Services: https://belintan.dev/services
+- Portfolio & Case Studies: https://belintan.dev/work
+- Pricing & Dynamic Estimator: https://belintan.dev/pricing
+- Contact & Booking: https://belintan.dev/contact
+- Privacy Policy: https://belintan.dev/privacy-policy
+- Terms & Conditions: https://belintan.dev/terms
+- Sitemap: https://belintan.dev/sitemap.xml
+
+## Core Engineering & Growth Services
+1. **Modern Web Apps**: React 19, Next.js, Vite, Tailwind CSS, TypeScript, progressive web apps (PWAs) with 100/100 Lighthouse performance and zero layout shift.
+2. **Node.js Backends & Microservices**: REST APIs, JWT authentication, PostgreSQL, MongoDB, Redis caching, microservices, and webhook routing.
+3. **Python AI & Custom MCP Servers**: Model Context Protocol (MCP) server development using FastMCP (stdio & SSE), tool calling, autonomous agent loops, prompt engineering, and LLM integrations (OpenAI, Gemini).
+4. **Digital Growth & Marketing Assets**:
+   - 10 Advertising Posters & Creatives (print & digital ready)
+   - 10 Social Media Video Reels (9:16 vertical, animated captions, hooks)
+   - 2 Meta Ad Campaigns (Facebook & Instagram target ads, Pixel setup)
+   - 1 Month Off-Site SEO (high-DA backlinks, local citations, Google Map Pack)
+5. **API Integrations & Cloud Webhooks**: Stripe payments, Supabase, OAuth 2.0, event-driven webhooks, and cloud microservices.
+
+## Technical Stack
+- **Frontend**: React 19, Vite, Tailwind CSS v4, JavaScript ES6+, HTML5 Semantic Architecture.
+- **Backend**: Node.js, Express, Python 3.11, FastAPI, Java Spring Boot.
+- **Databases**: PostgreSQL, MongoDB, SQLite, Redis.
+- **AI & Agent Protocols**: Model Context Protocol (MCP / FastMCP), OpenAI API, Gemini API, LangChain.
+- **DevOps**: Docker, Git/GitHub, Vercel, AWS EC2, Nginx.
+
+## Public JSON API Endpoints
+- `GET https://belintan.dev/api/freelancer`: Returns current freelancer availability, timezone coverage, and tech stack.
+- `POST https://belintan.dev/api/estimate`: Dynamic quote engine accepting `{ projectType, features: [], speed }`.
+- `POST https://belintan.dev/api/contact`: Formatted client inquiry router.
+- `GET https://belintan.dev/api/health`: Node.js server health status.
+
+## Contact Information
+- Direct WhatsApp: +91 86106 62871 (https://wa.me/918610662871)
+- Direct Email: belintan07@gmail.com
+- GitHub: https://github.com/belintan07
+- LinkedIn: https://www.linkedin.com/in/belintanben
