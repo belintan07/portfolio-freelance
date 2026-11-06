@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import CrmDialerModal from '../components/CrmDialerModal';
 import SheetFlowModal from '../components/SheetFlowModal';
+import GeminiProModal from '../components/GeminiProModal';
 import { useSEO } from '../hooks/useSEO';
 
 export default function WorkPage() {
@@ -14,6 +15,7 @@ export default function WorkPage() {
 
   const [crmModalOpen, setCrmModalOpen] = useState(false);
   const [sheetModalOpen, setSheetModalOpen] = useState(false);
+  const [geminiModalOpen, setGeminiModalOpen] = useState(false);
 
   const projects = [
     {
@@ -93,7 +95,8 @@ export default function WorkPage() {
       stack: ['Python 3.11', 'FastMCP', 'OpenAI', 'Gemini API'],
       metric: '10x Workflow Speed',
       desc: 'Enterprise Model Context Protocol bridge allowing Claude and Cursor agents to securely query internal databases, trigger CRM actions, and parse sales leads autonomously.',
-      highlights: ['FastMCP stdio & SSE bidirectional streaming', 'Tool-calling execution loops with guardrails', 'Seamless integration with Cursor & Claude Desktop']
+      highlights: ['FastMCP stdio & SSE bidirectional streaming', 'Tool-calling execution loops with guardrails', 'Seamless integration with Cursor & Claude Desktop'],
+      isInteractive: 'ai'
     }
   ];
 
@@ -186,6 +189,14 @@ export default function WorkPage() {
                       >
                         ▶ Launch Offline Sheet
                       </button>
+                    ) : proj.isInteractive === 'ai' ? (
+                      <button
+                        type="button"
+                        onClick={() => setGeminiModalOpen(true)}
+                        className="px-4 py-2 rounded-xl bg-[#3b82f6] hover:bg-[#2563eb] text-white font-extrabold text-xs tracking-wider transition-all shadow-[0_2px_15px_rgba(59,130,246,0.4)]"
+                      >
+                        ▶ Launch Gemini Studio
+                      </button>
                     ) : (
                       <span className="text-[11px] font-mono text-[#9d978a]">Production Code Handover</span>
                     )}
@@ -226,6 +237,7 @@ export default function WorkPage() {
       {/* Modals */}
       <CrmDialerModal isOpen={crmModalOpen} onClose={() => setCrmModalOpen(false)} />
       <SheetFlowModal isOpen={sheetModalOpen} onClose={() => setSheetModalOpen(false)} />
+      <GeminiProModal isOpen={geminiModalOpen} onClose={() => setGeminiModalOpen(false)} />
 
       <Footer />
     </div>

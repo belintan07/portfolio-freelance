@@ -1,0 +1,11 @@
+{
+  "buildCommand": "cd belintan-freelance-portfolio && npm install && npm run build",
+  "outputDirectory": "belintan-freelance-portfolio/dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

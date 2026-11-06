@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import PullCord from './components/PullCord';
 import CrmDialerModal from './components/CrmDialerModal';
 import SheetFlowModal from './components/SheetFlowModal';
+import GeminiProModal from './components/GeminiProModal';
 import { useSEO } from './hooks/useSEO';
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
   const [isSimulating, setIsSimulating] = useState(false);
   const [crmModalOpen, setCrmModalOpen] = useState(false);
   const [sheetModalOpen, setSheetModalOpen] = useState(false);
+  const [geminiModalOpen, setGeminiModalOpen] = useState(false);
 
   // Interactive Project Cost Estimator State (Beginner Freelance Packages)
   const [projectType, setProjectType] = useState('landing');
@@ -1129,10 +1131,19 @@ if __name__ == "__main__":
               </p>
             </div>
             <div className="pt-4 border-t border-white/5 flex items-center justify-between">
-              <span className="text-xs font-mono text-[#dcd7ce]">Python 3.11 • FastMCP • OpenAI</span>
-              <a href="https://wa.me/918610662871?text=Hi%20Belintan,%20tell%20me%20about%20Nexus%20AI" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-[#3b66f5] hover:underline">
-                Inquire &rarr;
-              </a>
+              <span className="text-xs font-mono text-[#dcd7ce]">Python 3.11 • FastMCP • Gemini Pro</span>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => setGeminiModalOpen(true)}
+                  className="px-3.5 py-1.5 rounded-lg bg-[#3b82f6] hover:bg-[#2563eb] text-white font-extrabold text-xs tracking-wide transition-all shadow-[0_2px_15px_rgba(59,130,246,0.4)]"
+                >
+                  ▶ Test AI Studio
+                </button>
+                <a href="https://wa.me/918610662871?text=Hi%20Belintan,%20tell%20me%20about%20Nexus%20AI" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-[#3b66f5] hover:underline">
+                  Inquire &rarr;
+                </a>
+              </div>
             </div>
           </div>
 
@@ -1329,6 +1340,7 @@ if __name__ == "__main__":
       ======================================================== */}
       <CrmDialerModal isOpen={crmModalOpen} onClose={() => setCrmModalOpen(false)} />
       <SheetFlowModal isOpen={sheetModalOpen} onClose={() => setSheetModalOpen(false)} />
+      <GeminiProModal isOpen={geminiModalOpen} onClose={() => setGeminiModalOpen(false)} />
 
       <Footer />
     </div>

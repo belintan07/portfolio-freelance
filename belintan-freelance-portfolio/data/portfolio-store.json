@@ -1,0 +1,101 @@
+{
+  "leads": [
+    {
+      "id": "LEAD-MW5BS4Y3",
+      "name": "Marcus Sterling",
+      "email": "marcus@sterlingai.com",
+      "contact": "+14159982341",
+      "company": "Sterling AI Labs",
+      "service": "Custom Solution",
+      "message": "Looking to hire Belintan for WebRTC telephony and FastMCP deployment.",
+      "status": "NEW",
+      "createdAt": "2026-11-06T18:46:04.299Z"
+    },
+    {
+      "id": "LEAD-INIT-01",
+      "name": "Sarah Jenkins",
+      "email": "sarah.j@fintechcorp.io",
+      "contact": "+1 (555) 382-9901",
+      "company": "FinTech Corp",
+      "service": "WebRTC Telephony & AI Automation",
+      "message": "Interested in enterprise cloud dialer and AI lead routing.",
+      "status": "DEMO_BOOKED",
+      "createdAt": "2026-11-04T18:46:02.731Z"
+    },
+    {
+      "id": "LEAD-INIT-02",
+      "name": "David Miller",
+      "email": "david@creatorstudios.co",
+      "contact": "+91 98401 22345",
+      "company": "Creator Studios",
+      "service": "Cinematic Reel Editing & Retouching",
+      "message": "Looking for a monthly retainer for 15 reels + model photoshoot color grading.",
+      "status": "IN_DISCUSSION",
+      "createdAt": "2026-11-05T18:46:02.733Z"
+    }
+  ],
+  "estimates": [
+    {
+      "id": "EST-MW5BS4XZ",
+      "projectType": "ai",
+      "features": [
+        "python_ai",
+        "mcp_server",
+        "node_api"
+      ],
+      "speed": "express",
+      "totalInr": 41874,
+      "totalUsd": 493,
+      "estimatedDays": 8,
+      "recommendedPlan": "Full-Stack & AI Suite",
+      "createdAt": "2026-11-06T18:46:04.296Z"
+    },
+    {
+      "id": "EST-INIT-01",
+      "projectType": "ai",
+      "features": [
+        "python_ai",
+        "mcp_server",
+        "node_api"
+      ],
+      "speed": "express",
+      "totalInr": 35624,
+      "totalUsd": 419,
+      "estimatedDays": 11,
+      "createdAt": "2026-11-06T06:46:02.733Z"
+    }
+  ],
+  "calls": [
+    {
+      "id": "CALL-MW5BS4YB",
+      "callerNumber": "+14159982341",
+      "agent": "Belintan",
+      "durationSeconds": 195,
+      "durationFormatted": "03:15",
+      "disposition": "Demo Booked",
+      "notes": "Walkthrough of Doocti softphone dialer.",
+      "timestamp": "2026-11-06T18:46:04.307Z"
+    },
+    {
+      "id": "CALL-INIT-01",
+      "callerNumber": "+1 (555) 382-9901",
+      "agent": "Belintan",
+      "durationSeconds": 222,
+      "durationFormatted": "03:42",
+      "disposition": "Demo Booked",
+      "notes": "Client reviewed Doocti WebRTC integration demo. Scheduled deep-dive for next Tuesday.",
+      "timestamp": "2026-11-06T14:46:02.733Z"
+    },
+    {
+      "id": "CALL-INIT-02",
+      "callerNumber": "+91 86106 62871",
+      "agent": "Belintan",
+      "durationSeconds": 78,
+      "durationFormatted": "01:18",
+      "disposition": "Follow Up",
+      "notes": "Quick check-in regarding Wedding Album color grading samples.",
+      "timestamp": "2026-11-05T18:46:02.733Z"
+    }
+  ],
+  "ai_sessions": []
+}
